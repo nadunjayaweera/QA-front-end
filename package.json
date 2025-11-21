@@ -4,14 +4,15 @@
   "description": "A backend service for user management using Express and Sequelize.",
   "main": "src/server.ts",
   "scripts": {
-    "start": "nodemon --exec ts-node src/server.ts",
-    "build": "tsc",
-    "dev": "ts-node-dev src/server.ts"
+    "start": "node init && nodemon --exec ts-node src/server.ts",
+    "build": "node init && tsc",
+    "dev": "node init && ts-node-dev src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.1.11",
     "sequelize": "^6.6.5"
   },
