@@ -4,9 +4,9 @@
   "description": "A backend service for user management using Express and Sequelize.",
   "main": "src/server.ts",
   "scripts": {
-    "start": "node init && nodemon --exec ts-node src/server.ts",
-    "build": "node init && tsc",
-    "dev": "node init && ts-node-dev src/server.ts"
+    "start": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
